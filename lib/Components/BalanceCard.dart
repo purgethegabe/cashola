@@ -6,27 +6,31 @@ import '../themes/main_text_theme.dart';
 class BalanceCard extends StatelessWidget {
   final String balance;
   const BalanceCard({required this.balance});
-
   @override
   Widget build(BuildContext context) {
     return Card(
-      elevation: 2,
-      margin: EdgeInsets.all(12),
+      elevation: 13,
+      shadowColor: Colors.transparent,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      margin: EdgeInsets.fromLTRB(16, 16, 16, 12),
       child: Padding(
-        padding: const EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(15.0),
         child: Column(
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("SALDO ATUAL TOTAL"),
-                Icon(CupertinoIcons.chevron_forward),
+                Text("SALDO ATUAL TOTAL",
+                    style: MainTextTheme.miniTitleText(context)),
+                Icon(CupertinoIcons.info_circle),
               ],
             ),
-            Text(
-              "R\$ ${balance}",
-              style: MainTextTheme.balanceText(context),
-            ),
+            Align(
+                child: Text(
+                  "R\$${balance}",
+                  style: MainTextTheme.balanceText(context),
+                ),
+                alignment: Alignment.centerLeft),
           ],
         ),
       ),

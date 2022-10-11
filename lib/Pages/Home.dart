@@ -1,8 +1,11 @@
 // ignore_for_file: file_names
+import 'package:cashola/Components/MonthResume.dart';
+import 'package:cashola/Components/PendingTrans.dart';
 import 'package:flutter/cupertino.dart';
 import '../util/date_time_extension.dart';
 import '../Components/BalanceCard.dart';
 import '../Components/MonthNavigationButton.dart';
+import '../Components/ContasCard.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -22,8 +25,16 @@ class Home extends StatelessWidget {
       child: ListView(
         children: [
           Container(
-            child: BalanceCard(balance: "10"),
+            child: BalanceCard(balance: "420"),
           ),
+          Container(
+            child: MonthResume(
+                revenuetotal: "3500", expensetotal: "3500", eomresult: "3500"),
+          ),
+          Container(
+            child: PendingTrans(),
+          ),
+          Container(child: AccountsCard())
         ],
       ),
     );
