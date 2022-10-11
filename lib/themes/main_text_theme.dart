@@ -41,6 +41,14 @@ class MainTextTheme {
         color: CupertinoColors.systemRed);
   }
 
+  static TextStyle miniBalanceTextCONTASWHITE(BuildContext context) {
+    return Theme.of(context).textTheme.bodyText1!.copyWith(
+        fontSize: 19,
+        fontFamily: "SF Mono",
+        fontWeight: FontWeight.bold,
+        color: CupertinoColors.white);
+  }
+
   static TextStyle bigBodyText(BuildContext context) {
     return Theme.of(context).textTheme.bodyText1!.copyWith(
         fontSize: 17,
@@ -67,8 +75,16 @@ class MainTextTheme {
 
   static TextStyle accountandcardsText(BuildContext context) {
     return Theme.of(context).textTheme.bodyText1!.copyWith(
-        fontSize: 15,
+        fontSize: 14,
         fontFamily: "SF Pro",
+        fontWeight: FontWeight.bold,
+        color: CupertinoColors.white);
+  }
+
+  static TextStyle accountandcardsNumber(BuildContext context) {
+    return Theme.of(context).textTheme.bodyText1!.copyWith(
+        fontSize: 16,
+        fontFamily: "SF Mono",
         fontWeight: FontWeight.bold,
         color: CupertinoColors.white);
   }

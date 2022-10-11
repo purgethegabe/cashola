@@ -27,7 +27,7 @@ class PendingTrans extends StatelessWidget {
             SizedBox(height: 10),
             Card(
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(4)),
+                  borderRadius: BorderRadius.circular(10)),
               elevation: 13,
               shadowColor: Colors.transparent,
               color: CupertinoColors.activeBlue,
