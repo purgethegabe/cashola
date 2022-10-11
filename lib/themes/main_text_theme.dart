@@ -85,7 +85,23 @@ class MainTextTheme {
     return Theme.of(context).textTheme.bodyText1!.copyWith(
         fontSize: 16,
         fontFamily: "SF Mono",
+        fontWeight: FontWeight.normal,
+        color: CupertinoColors.white);
+  }
+
+  static TextStyle miniaccountandcardsText(BuildContext context) {
+    return Theme.of(context).textTheme.bodyText1!.copyWith(
+        fontSize: 11,
+        fontFamily: "SF Pro",
         fontWeight: FontWeight.bold,
+        color: CupertinoColors.white);
+  }
+
+  static TextStyle miniaccountandcardsNumber(BuildContext context) {
+    return Theme.of(context).textTheme.bodyText1!.copyWith(
+        fontSize: 11,
+        fontFamily: "SF Mono",
+        fontWeight: FontWeight.normal,
         color: CupertinoColors.white);
   }
 }
