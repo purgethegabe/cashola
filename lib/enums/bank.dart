@@ -1,0 +1,1 @@
+enum Bank { nubank, itau }

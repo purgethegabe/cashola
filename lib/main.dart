@@ -1,7 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:cashola/Pages/Home.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:cashola/Pages/home.dart';
+import 'package:cashola/core/main_theme.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,12 +12,9 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return CupertinoApp(
-      title: 'Flutter Demo',
-      theme: CupertinoThemeData(
-        primaryColor: CupertinoColors.activeBlue,
-        scaffoldBackgroundColor: Color.fromRGBO(242, 242, 248, 1),
-      ),
+    return MaterialApp(
+      title: 'Cashola',
+      theme: getThemeData(),
       home: Home(),
     );
   }

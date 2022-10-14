@@ -76,12 +76,12 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-     - family: SF Pro
-       fonts:
+    - family: SF Pro
+      fonts:
         - asset: assets/fonts/SF-Pro.ttf
 
-     - family: SF Mono
-       fonts:
+    - family: SF Mono
+      fonts:
         - asset: assets/fonts/SF-Mono-Bold.otf
 
   #   - family: Trajan Pro

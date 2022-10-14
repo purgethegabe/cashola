@@ -24,7 +24,7 @@ class MonthNavigationButton extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: next ? getChildren().reversed.toList() : getChildren(),
       ),
-      onPressed: () => {},
+      onPressed: () {},
     );
   }
 }
